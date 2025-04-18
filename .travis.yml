@@ -1,0 +1,17 @@
+language: cpp
+
+compiler:
+  - g++
+
+# Этапы сборки
+script:
+  - mkdir -p build
+  - cd build
+  - cmake ..
+  - make
+  - ./run_tests  # Если есть тесты
+
+# Кэширование папки сборки (опционально)
+cache:
+  directories:
+    - build/
