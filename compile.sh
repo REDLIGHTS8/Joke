@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ -o Joke Joke.cpp
+g++ -o Joke лр1.cpp
