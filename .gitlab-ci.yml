@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+
+build_job:
+  stage: build
+  script:
+    - mkdir -p build
+    - cd build
+    - cmake ..
+    - make
+
+test_job:
+  stage: test
+  script:
+    - cd build && ctest --output-on-failure
