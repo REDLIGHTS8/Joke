@@ -1,4 +1,17 @@
-﻿#include <iostream>
+﻿/**
+ * @file лр1.cpp
+ * @brief Выбери свой анекдот дня
+ * @author Maria
+ * @date 2025
+ */
+
+#include <iostream>
+
+/**
+ * @brief Главная функция программы
+ * @param n неотрицательное целое число
+ * @return Код завершения программы
+ */
 
 int main()
 {
