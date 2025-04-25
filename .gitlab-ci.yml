@@ -1,9 +1,4 @@
-stages:
-  - test
-
-test_job:
-  stage: test
-  image: node:18
+build_job:
+  stage: build
   script:
-    - npm install
-    - npm test
+    - g++ -std=c++17 -o myapp src/*.cpp
