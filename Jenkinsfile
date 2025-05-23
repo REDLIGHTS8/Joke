@@ -33,10 +33,10 @@ pipeline {
     }
     checkout([
     $class: 'GitSCM',
-    branches: [[name: '*/main']],
+    branches: [[name: '*/master']],
     extensions: [],
     userRemoteConfigs: [[
-        credentialsId: 'your-credentials-id',
+        credentialsId: '6d1e6e16-e0e1-4661-aa98-bde11f19505b',
         url: 'https://github.com/REDLIGHTS8/Joke.git'
     ]]
 ])
