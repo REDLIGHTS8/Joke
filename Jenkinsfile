@@ -31,4 +31,13 @@ pipeline {
             cleanWs()
         }
     }
+    checkout([
+    $class: 'GitSCM',
+    branches: [[name: '*/main']],
+    extensions: [],
+    userRemoteConfigs: [[
+        credentialsId: 'your-credentials-id',
+        url: 'https://github.com/REDLIGHTS8/Joke.git'
+    ]]
+])
 }
